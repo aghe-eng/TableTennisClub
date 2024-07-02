@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beitritt</title>
+    <link rel="stylesheet" href="../style.css"/>
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="javaScript/main.js"></script>
+
+    <script>
+     $(document).ready(function() {
+    $("#header").load("../partials/header.html");
+    $("#footer").load("../partials/footer.html");
+});
+
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+<main>
+    <div id="page-content"></div>
+
+<div class="form-container">
+   <p><b>Kontaktformular</b></p>
+<form action="https://formspree.io/f/movaqdak" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="message">Nachricht:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+    <input type="submit" value="Senden">
+    <p>Durch * gekennzeichnete Felder sind erforderlich.</p>
+</form>
+</div>
+    <div id="footer"></div>
+    <script src="javaScript/script.js"></script>
+</body>
+</html>

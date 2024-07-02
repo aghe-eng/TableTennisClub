@@ -91,8 +91,8 @@ nav {
     padding: 3px;
     height: 100%;
     border-bottom: 2px solid white;
-    text-align:justify;
 }
+
 nav ul {
     list-style-type: none;
     margin: 5px 0;
@@ -100,38 +100,38 @@ nav ul {
     text-align: justify;
 }
 
-nav ul li {
+header nav ul li {
     display: inline-block;
     margin: 0 10px;
-
+    position: relative;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-.dropdown-content {
+header .dropdown-content {
     display: none;
     position: absolute;
     z-index: 1;
     padding: 15px;
-    margin-left: -10px;
+    margin-top: 5px;
+    left: 0;
 }
-
-nav ul li:hover .dropdown-content {
+header nav ul li:hover .dropdown-content, .dropdown-content:hover {
     display: block;
 }
 
-.list-content:hover {
-    color: black !important;
+header .list-content:hover {
+    color: black
 }
 
-.dropdown-content li {
+header .dropdown-content li {
     display: block;
 }
 
-.dropdown-list {
+header .dropdown-list {
     background-color: #333;
     color: white;
     padding: 3px;
@@ -214,4 +214,40 @@ body .modal {
     border: 2px solid rgba(0, 0, 0, 0.1);
     box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.5);
     z-index: 2;
+}
+
+.club-list > div {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50px;
+}
+
+.green-club a{
+  color: green;
+  text-decoration: underline solid green;
+}
+
+.green-club {
+  color: green;
+  text-decoration: underline solid green;
+}
+
+.center{
+  text-align: center;
+}
+
+.vorstand-img img {
+  width: 70%;
+  height: 70%;
+}
+
+.form-container {
+  border: #dbd9d9 solid 1px;
+  margin: 20px;
+  margin-left: 30%;
+  width: 35%;
+  height: auto;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
