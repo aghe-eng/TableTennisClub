@@ -6,33 +6,25 @@
     <title>TTC-Schladern</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" href="favicon.png" type="png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="javaScript/main.js"></script>
+
+    <script>
+     $(document).ready(function() {
+    $("#header").load("../partials/header.html");
+    $("#nav").load("../partials/nav.html");
+    $("#footer").load("../partials/footer.html");
+});
+    </script>
+
   </head>
   <body>
-    <header>
-      <div class="inline">
-        <p>TTC Grün-Weiß 1954 Schladern e.V.</p>
-        <p>Herzlich Willkommen</p>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="startseite.html">Startseite</a>
-            <ul class="dropdown-content dropdown-list">
-            
-            <li class="list-content"><a href="pages/training.html">Training</a></li>
-            <li class="list-content"><a href="#">Beitritt</a></li>
-            <li class="list-content"><a href="#">Befreundete Vereine</a></li>
-            <li class="list-content"><a href="#">Impressum</a></li>
-        
-        </ul></li>
-
-          <li><a href="#">Aktuelles</a></li>
-          <li><a href="#">Mannschaften</a></li>
-          <li><a href="#">Vorstand</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header"></div>
+    <div id="nav"></div>
     <main>
+      <div id="page-content"></div>
       <div class="slideshow-container">
         <div class="slide fade">
           <img src="images/table_tennis1.jpg" alt="table tennis image 1" />
@@ -51,7 +43,7 @@
       </div>
 
       <div class="paragraph-container">
-        <h2>Willkommen beim TTC GW 1954 Schladern Tischtennisverein</h2> 
+        <h2>Willkommen beim TTC GW 1954 Schladern Tischtennisverein</h2>
     <br>
         <p>
           Der TTC Grün-Weiß 1954 Schladern e.V. ist ein Tischtennisverein aus
@@ -90,41 +82,31 @@
         <div class="modal hidden">
             <button class="close-modal">&times;</button>
             <p><b>Wie trete ich dem TTC Schladern bei? </b><br>
-    
+
 
                 <p>Sie oder eines ihrer Kinder interessieren sich für den aktiven Beitritt</p> <br>
-                im 
-                
+                im
+
                 <p>TTC Grün-Weiß 1954 Schladern e.V.?</p>
-                
+
                 <p>Wenn Sie noch Fragen haben, können diese zeitnah beantwortet werden:</p> <br>
-                 
+
                 info@ttc-schladern.de
                 <br>
-                <p>Wenn Sie sich bereits entschieden haben dem TTC beizutreten, 
+                <p>Wenn Sie sich bereits entschieden haben dem TTC beizutreten,
                 können Sie hier den <a href="Document/AUFNAHMEANTRAG.pdf" target="_blank" active>Aufnahmeantrag</a> im PDF-Format herunterladen!
                 Den ausgefüllten Antrag während der Trainingszeiten zur Halle bringen,
                 oder per Mail an info@ttc-schladern.de senden.</p> <br>
-                
-                
+
+
             <p> Für das Öffnen des Antrages wird beispielsweise der <a href="https://get.adobe.com/de/reader/", target="_blank" active> Adobe Reader</a>benötigt.</p> <br>
-                
+
                 Bis bald!
 
             </p>
         </div>
     </main>
-    <footer>
-        <div class="footer-paragraph"><h4> <b>Interesse am Sport? </b></h4>
-        <p> Wir suchen jederzeit Kinder, Jugendliche und Erwachsene, die für den Tischtennissport zu begeistern <br> Dabei spielt es keine Rolle ob Anfänger oder Wiedereinsteiger! <br>Weitere Informationen hierzu unter <span class="show-modal">Beitritt.</span></p>
-    </div>
-    
-
-  <p>Elsternweg, 51570 Windeck       |       E-mail: info@ttc-schladern.de</p
-
-      <p>&copy; 2020 TTC Grün-Weiß 1954 Schladern e.V.</p>
-
-    </footer>
-    <script src="script.js"></script>
+  <div id="footer"></div>
+    <script src="javaScript/script.js"></script>
   </body>
 </html>
